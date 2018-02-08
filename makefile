@@ -18,6 +18,12 @@ lab.pdf: lab.tex
 # rule to run spell check
 spell:
 	aspell --lang=en --mode=tex check lab.tex
+	aspell --lang=en --mode=tex check report_sections/abstract.tex
+	aspell --lang=en --mode=tex check report_sections/appendixPage.tex
+	aspell --lang=en --mode=tex check report_sections/conclusion.tex
+	aspell --lang=en --mode=tex check report_sections/designMethodology.tex
+	aspell --lang=en --mode=tex check report_sections/results.tex
+	aspell --lang=en --mode=tex check report_sections/tableOfContents.tex
 
 # rule to clean up the directory
 clean:
